@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3em;
+  background-color: #eee;
+  border-bottom: 1px solid black;
+  padding: 0.25em;
+}
+
+header nav.navbar {
+  background-color: black;
+}
+
+header nav.navbar ul.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em;
+}
+
+header nav.navbar ul.list li.list-item a, header nav.navbar ul.list li.list-item a:link, header nav.navbar ul.list li.list-item a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  border: 1px solid white;
+  padding: 0.25em;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 2em;
+  }
+}
+
+main section {
+  margin-top: 2em;
+}
+
+main section#output {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main section#output {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main section#output {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+main section#output div.box {
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+  background-color: #eee;
+  max-width: 400px;
+}
+
+main section#output div.box img {
+  width: 100%;
+  height: 200px;
+}
+
+main section#input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em auto;
+}
+
+main section#input #what {
+  margin: 0.5em auto;
+}
+
+main section#input #inputform * {
+  margin: 0.5em auto;
+}
+
+main section#input #inputform *::-webkit-input-placeholder {
+  text-align: center;
+}
+
+main section#input #inputform *:-ms-input-placeholder {
+  text-align: center;
+}
+
+main section#input #inputform *::-ms-input-placeholder {
+  text-align: center;
+}
+
+main section#input #inputform *::placeholder {
+  text-align: center;
+}
+
+main section#input #inputform button#submit {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  background-color: black;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer #footleft p {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.25em;
+  margin-left: 1em;
+  border: 1px solid white;
+}
+
+footer #footright p {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.25em;
+  margin-right: 1em;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=style.css.map */
