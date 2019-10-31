@@ -23,7 +23,7 @@ var Place = /** @class */ (function () {
     Place.prototype.display = function () {
         var output = document.getElementById("output");
         output.innerHTML +=
-            "\n            <div class=\"box\">\n                <p>" + this.constructor.name + "</p>\n                <h2>" + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>" + this.name + "</p>\n                <p>" + this.address + "</p>\n                <p>" + this.zip + "</p>\n            </div>\n        ";
+            "\n            <div class=\"box\">\n                <p>Type: " + this.constructor.name + "</p>\n                <h2>Location: " + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>Name: " + this.name + "</p>\n                <p>Address: " + this.address + "</p>\n                <p>Postcode: " + this.zip + "</p>\n            </div>\n        ";
     };
     return Place;
 }());
@@ -39,7 +39,7 @@ var Restaurant = /** @class */ (function (_super) {
     Restaurant.prototype.display = function () {
         var output = document.getElementById("output");
         output.innerHTML +=
-            "\n            <div class=\"box\">\n                <p>" + this.constructor.name + "</p>\n                <h2>" + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>" + this.name + "</p>\n                <p>" + this.type + "</p>\n                <p>" + this.address + "</p>                \n                <p>" + this.zip + "</p>\n                <p>" + this.telNumber + "</p>\n                <p>" + this.web + "</p>\n            </div>\n        ";
+            "\n            <div class=\"box\">\n                <p>Type: " + this.constructor.name + "</p>\n                <h2>Location: " + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>Name: " + this.name + "</p>\n                <p>Cousine: " + this.type + "</p>\n                <p>Address:" + this.address + "</p>                \n                <p>Postcode: " + this.zip + "</p>\n                <p>Phone number: " + this.telNumber + "</p>\n                <p>Web: " + this.web + "</p>\n            </div>\n        ";
     };
     return Restaurant;
 }(Place));
@@ -55,7 +55,7 @@ var Events = /** @class */ (function (_super) {
     Events.prototype.display = function () {
         var output = document.getElementById("output");
         output.innerHTML +=
-            "\n            <div class=\"box\">\n                <p>" + this.constructor.name + "</p>\n                <h2>" + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>" + this.name + "</p>\n                <p>" + this.eventDate + "</p>\n                <p>" + this.address + "</p>                \n                <p>" + this.zip + "</p>\n                <p>" + this.eventTime + "</p>\n                <p>" + this.eventPrice + "</p>\n            </div>\n        ";
+            "\n            <div class=\"box\">\n                <p>Type: " + this.constructor.name + "</p>\n                <h2>Location: " + this.city + "</h2>\n                <img src=\"" + this.img + "\">\n                <p>Name: " + this.name + "</p>\n                <p>Address:" + this.address + "</p>                \n                <p>Postcode: " + this.zip + "</p>\n                <p>Date: " + this.eventDate + "</p>\n                <p>Time: " + this.eventTime + "</p>\n                <p>Price: " + this.eventPrice + " EUR</p>\n            </div>\n        ";
     };
     return Events;
 }(Place));

@@ -17,12 +17,12 @@ class Place {
         output.innerHTML += 
         `
             <div class="box">
-                <p>${this.constructor.name}</p>
-                <h2>${this.city}</h2>
+                <p>Type: ${this.constructor.name}</p>
+                <h2>Location: ${this.city}</h2>
                 <img src="${this.img}">
-                <p>${this.name}</p>
-                <p>${this.address}</p>
-                <p>${this.zip}</p>
+                <p>Name: ${this.name}</p>
+                <p>Address: ${this.address}</p>
+                <p>Postcode: ${this.zip}</p>
             </div>
         `;
     }
@@ -48,15 +48,15 @@ class Restaurant extends Place{
         output.innerHTML += 
         `
             <div class="box">
-                <p>${this.constructor.name}</p>
-                <h2>${this.city}</h2>
+                <p>Type: ${this.constructor.name}</p>
+                <h2>Location: ${this.city}</h2>
                 <img src="${this.img}">
-                <p>${this.name}</p>
-                <p>${this.type}</p>
-                <p>${this.address}</p>                
-                <p>${this.zip}</p>
-                <p>${this.telNumber}</p>
-                <p>${this.web}</p>
+                <p>Name: ${this.name}</p>
+                <p>Cousine: ${this.type}</p>
+                <p>Address:${this.address}</p>                
+                <p>Postcode: ${this.zip}</p>
+                <p>Phone number: ${this.telNumber}</p>
+                <p>Web: ${this.web}</p>
             </div>
         `;
     }
@@ -82,15 +82,15 @@ class Events extends Place {
         output.innerHTML += 
         `
             <div class="box">
-                <p>${this.constructor.name}</p>
-                <h2>${this.city}</h2>
+                <p>Type: ${this.constructor.name}</p>
+                <h2>Location: ${this.city}</h2>
                 <img src="${this.img}">
-                <p>${this.name}</p>
-                <p>${this.eventDate}</p>
-                <p>${this.address}</p>                
-                <p>${this.zip}</p>
-                <p>${this.eventTime}</p>
-                <p>${this.eventPrice}</p>
+                <p>Name: ${this.name}</p>
+                <p>Address:${this.address}</p>                
+                <p>Postcode: ${this.zip}</p>
+                <p>Date: ${this.eventDate}</p>
+                <p>Time: ${this.eventTime}</p>
+                <p>Price: ${this.eventPrice} EUR</p>
             </div>
         `;
     }

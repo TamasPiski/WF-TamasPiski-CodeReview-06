@@ -89,8 +89,15 @@ main section#output div.box {
 }
 
 main section#output div.box img {
+  display: none;
   width: 100%;
   height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  main section#output div.box img {
+    display: block;
+  }
 }
 
 main section#input {
